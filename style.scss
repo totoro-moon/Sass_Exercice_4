@@ -1,0 +1,21 @@
+$decoration_underline: underline red;
+@mixin color_red{
+  font-size: 12px;
+  color: red;
+  font-family: serif;
+}
+
+.métamorphose{
+  @include color_red;
+  .métamorphose__1{
+  text-decoration: $decoration_underline;
+}
+}
+//en heritage on peut aussi étendre la class avec @extend
+//.métamorphose{
+//  @include color_red;
+//}
+//  .métamorphose__1{
+//    @extend .metamorphose
+//  text-decoration: $decoration_underline;
+//}
